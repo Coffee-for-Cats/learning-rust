@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "exercices"
+name = "exercices-temperature"
 version = "0.1.0"
