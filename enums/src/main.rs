@@ -26,6 +26,8 @@ fn main() {
     //It can be a "Write" (a tuple with a String inside), or a "Move" (an object with x and y)
     let mut m = Message::Write(String::from("Hello"));
     m.call();
+    //same as:
+    //Message::call(&mut m);
     let mut m = Message::Move { x: 4, y: 5 };
     m.call();
 }

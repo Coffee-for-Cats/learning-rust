@@ -1,4 +1,3 @@
-//This is a valid module creating method: "Inline"
 mod back_of_house {
     pub struct Breakfast {
         pub toast: String,
@@ -17,12 +16,19 @@ mod back_of_house {
     }
 }
 
+mod front_of_house;
+
+//It just adds the "nickname" hosting.
+//I need to use crate:: because it is a bin?
+pub use crate::front_of_house::hosting;
+
 pub fn eat_at_restaurant() {
+    //front_of_house function.
+    hosting::add_to_waitlist();
+
+    //back_of_house function test.
     let mut meal = back_of_house::Breakfast::summer("Rye");
-
     meal.toast = String::from("Wheat");
-    println!("I'd like {} toast please.", meal.toast);
-
     //I cannot access this field, because it is not public!
     //meal.seasonal_fruit = String::from("Bluebarries");
 }
