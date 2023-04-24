@@ -6,7 +6,7 @@ fn main() {
     println!("Input the fibonacci number you want:");
     io::stdin().read_line(&mut number).expect("Error!");
 
-    let number: i32 = number
+    let number: i64 = number
         .trim()
         .parse()
         .expect("Please, type a valid number only!");
@@ -18,9 +18,9 @@ fn main() {
     );
 }
 
-fn fast_fib(n: i32) -> i32 {
+fn fast_fib(n: i64) -> i64 {
     let mut last2fib = (1, 0);
-    for _i in (1..n) {
+    for _i in 1..n {
         let first = last2fib.0;
         let secnd = last2fib.1;
 
