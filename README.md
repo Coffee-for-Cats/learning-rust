@@ -5,4 +5,4 @@ Aqui tenho meus primeiros passos e também minhas primeiras impressões com Rust
 ## Oque aprendi além da Sintaxe
 Em Rust, você acaba inevitavelmente aprendendo alguns conceitos importantes de segurança, código limpo e velocidade, já que você precisa lidar com o Borrowchecker e com a forte tipagem da linguagem.
 
-Eu tive o prazer de escrever um programa com a certeza de que ele não fecharia ou se comportaria de forma diferente da minha previsão, tudo por que a Tipagem é **incrível** e **o Error Handling é impecável**.
+Eu tive o prazer de escrever um programa com a certeza de que ele não fecharia ou se comportaria de forma diferente da minha previsão, __mesmo antes de executar o código__, tudo por que a Tipagem é **incrível** e **o Error Handling é impecável**.
