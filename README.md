@@ -1,8 +1,15 @@
-# Aprendendo Rust
-Esse é meu repositório onde coloquei todo o código que escrevi quando aprendi a utilizar Rust!
-Aqui tenho meus primeiros passos e também minhas primeiras impressões com Rust, uma linguagem compilada, com uma curva de aprendizagem bem acentuada, mas que amei utilizar!
+# PORTUGUÊS
 
-## Oque aprendi além da Sintaxe
-Em Rust, você acaba inevitavelmente aprendendo alguns conceitos importantes de segurança, código limpo e velocidade, já que você precisa lidar com o Borrowchecker e com a forte tipagem da linguagem.
+## Aprendendo Rust
+Esse é o meu repositório com todo o código que eu escrevi enquanto tentava aprender a linguagem. A linguagem é maravilhosa e eu espero que eu possa dedicar mais algum tempo para me aprofundar no futuro.
 
-Eu tive o prazer de escrever um programa com a certeza de que ele não fecharia ou se comportaria de forma diferente da minha previsão, __mesmo antes de executar o código__, tudo por que a Tipagem é **incrível** e **o Error Handling é impecável**.
+## Oque aprendi além da sintaxe
+O rico sistema de tipos e o manejamento de erros é simplesmente muito bom! Eu acho que aprender Rust me ajudou muito por que aprendi a lidar com erros de uma forma melhor, e eu comecei a entender as linguagens de tipagem estática.
+
+# ENGLISH
+
+## Learning Rust
+This is my repository with all the code I have written in rust while I tried to learn the language. The language is amazing and I hope I can dedicate some more time to deepen in the future.
+
+## What I learned beyond the syntaxe
+The rich type system and the error handling is just so good! I think it helped a lot for me, because I learned how to handle errors in a better way, and I started to understand static typed languages.
