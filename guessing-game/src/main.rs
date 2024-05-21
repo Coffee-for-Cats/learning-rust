@@ -21,12 +21,13 @@ fn main() {
             Err(_) => continue,
         };
 
-        //O .cmp() retorna um Result, que pode ser Ordering::Less, Greater ou Equal (são tipos, que são parte do std::cmp::Ordering), e o match compara esse Result com essas três "arms", sendo elas "Less", "Greater", ou "Equal", e executa uma Arrow Function na primeira de fechar.
+        //O .cmp() retorna um Result, que pode ser Ordering::Less, Greater ou Equal (são tipos, que são parte do std::cmp::Ordering), e o match compara esse Result com essas três "arms", sendo elas "Less", "Greater", ou "Equal", e executa uma Arrow Function na primeira que fechar.
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too Small!"),
             Ordering::Greater => println!("Too Big!"),
             Ordering::Equal => {
                 println!("You win!");
+                // this break jumps off the loop.
                 break;
             }
         }

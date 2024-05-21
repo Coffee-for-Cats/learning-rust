@@ -23,9 +23,14 @@ impl Config {
     //     })
     // }
 
+    // recieves a mutable reference to something iterable.
+    // returns a Result, or config object.
     pub fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
+        // minigrep <inputname> <outputname>
+        // 1        2           3
         args.next();
 
+        // args is iterable; iterable things has ".next"
         let query = match args.next() {
             Some(arg) => arg,
             None => return Err("Didn't get a query string."),
@@ -46,6 +51,7 @@ impl Config {
     }
 }
 
+// results in or nothing, or a Box with a dynamic error ???
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(config.filename)?;
 
@@ -63,6 +69,9 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 }
 
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    // lines returns array.
+    // Filter returns iterrator
+    // Collect execute and transform into string/array again.
     contents
         .lines()
         .filter(|line| line.contains(query))
